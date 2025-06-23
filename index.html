@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      button:active{
+        background: rgba(0, 0, 0, 0.444);
+      }
+      .power{
+        color: rgb(0, 220, 7);
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body class="bg-black h-full w-full">
+     <div class="calculator flex justify-center items-center">
+      <div class="body_cal h-[430px] w-[300px] border-2 border-white  rounded-xl m-2 overflow-hidden relative">
+
+
+
+        <div id="result" class="display_cal h-[70px] w-[93%] border-2 border-white rounded-md  mx-auto mt-2 text-white flex justify-center items-center font-bold text-3xl relative">
+          
+        </div>
+        <div id="power" class="power absolute top-0 text-white end-0 px-5 mt-2" >
+            <!-- on -->
+          </div>
+        <div class="caption w-full my-2 px-3">
+             <label class="flex justify-end  font-bold text-white " for="">Calculator</label>
+        </div>
+        <div class="botton_cal ">
+              <div class="row_num  h-full ">
+                <section class="grid grid-cols-4 gap-2 w-full bottom-0 p-4 bg-gray-800 rounded-lg text-white absolute">
+                    <section><button id="btnMRC" class="bg-gray-700 p-3 rounded w-full">MRC</button></section>
+                    <section><button id="btnMSub" class="bg-gray-700 p-3 rounded w-full">M-</button></section>
+                    <section><button id="btnMPlus" class="bg-gray-700 p-3 rounded w-full">M+</button></section>
+                    <section><button id="btnOnOff" class="bg-red-600 p-3 rounded w-full">on/off</button></section>
+
+                    <section><button id="btn7" class="bg-gray-700 p-3 rounded w-full">7</button></section>
+                    <section><button id="btn8" class="bg-gray-700 p-3 rounded w-full">8</button></section>
+                    <section><button id="btn9" class="bg-gray-700 p-3 rounded w-full">9</button></section>
+                    <section><button id="btnDivision" class="bg-orange-500 p-3 rounded w-full">/</button></section>
+
+                    <section><button id="btn4" class="bg-gray-700 p-3 rounded w-full">4</button></section>
+                    <section><button id="btn5" class="bg-gray-700 p-3 rounded w-full">5</button></section>
+                    <section><button id="btn6" class="bg-gray-700 p-3 rounded w-full">6</button></section>
+                    <section><button id="btnMultiply" class="bg-orange-500 p-3 rounded w-full">*</button></section>
+
+                    <section><button id="btn1" class="bg-gray-700 p-3 rounded w-full">1</button></section>
+                    <section><button id="btn2" class="bg-gray-700 p-3 rounded w-full">2</button></section>
+                    <section><button id="btn3" class="bg-gray-700 p-3 rounded w-full">3</button></section>
+                    <section><button id="btnMinus" class="bg-orange-500 p-3 rounded w-full">-</button></section>
+
+                    <section><button id="btn0" class="bg-gray-700 p-3 rounded w-full">0</button></section>
+                    <section><button id="btnClear" class="bg-yellow-500 p-3 rounded w-full">C</button></section>
+                    <section><button id="btnEqual" class="bg-green-500 p-3 rounded w-full">=</button></section>
+                    <section><button id="btnPlus" class="bg-orange-500 p-3 rounded w-full">+</button></section>
+                    </section>
+
+
+              </div>
+        </div>
+      </div>
+     </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -9,11 +9,8 @@ const btn6 = document.getElementById('btn6');
 const btn7 = document.getElementById('btn7');
 const btn8 = document.getElementById('btn8');
 const btn9 = document.getElementById('btn9');
-
 const btnMPlus = document.getElementById('btnMPlus'); 
 const btnMSub = document.getElementById('btnMSub');  
-
-
 const btnPlus = document.getElementById('btnPlus');
 const btnMinus = document.getElementById('btnMinus');
 const btnMultiply = document.getElementById('btnMultiply');
@@ -21,26 +18,19 @@ const btnDivision = document.getElementById('btnDivision');
 const btnClear = document.getElementById('btnClear');
 const btnEqual = document.getElementById('btnEqual');
 const btnMRC = document.getElementById('btnMRC');
-
 const  btnOnOff = document.getElementById('btnOnOff');
 const  power = document.getElementById('power');
-
-
-
-
-
 
 [btn0, btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9].forEach(btn => {
   btn.addEventListener('click', () => {
     if(result.textContent === 'Error'){
         result.textContent = '';
-    }
+    };
     result.textContent += btn.textContent;
     const value =  input.value;
     display.innerText = value
   });
 });
-
 
 const operators = ["+", "-", "*", "/"];
 [btnPlus, btnMinus, btnMultiply, btnDivision].forEach(btn => {
@@ -48,7 +38,7 @@ const operators = ["+", "-", "*", "/"];
     const lastChar = result.textContent.slice(-1);
     if (operators.includes(lastChar)) {
       return; 
-    }
+    };
     result.textContent += btn.textContent;
   });
 });
@@ -65,11 +55,10 @@ btnEqual.addEventListener('click', () => {
   }
 });
 
-
 let isOn = true; 
 if(isOn = true){
     power.textContent = 'on'; 
-}
+};
 
 btnOnOff.addEventListener('click', () => {
   if (isOn) {
@@ -87,5 +76,5 @@ btnOnOff.addEventListener('click', () => {
      btnMPlus, btnMSub, btnMRC].forEach(btn => btn.disabled = false);
        power.textContent = 'on';
     isOn = true;
-  }
+  };
 });
